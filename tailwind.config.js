@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      flex: {
+        '2': '2 1 0%', // This represents the flex-grow, flex-shrink, and flex-basis values
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
