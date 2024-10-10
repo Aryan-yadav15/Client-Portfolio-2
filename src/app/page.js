@@ -2,6 +2,8 @@ import Image from "next/image";
 import Header from "./_components/Header";
 import Herosection from "./_components/Herosection";
 import Links from "./_components/Links";
+import MyWork from "./_components/MyWork";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Header/>
       <Herosection/>
       <Links/>
+      <MyWork/>
+      <Footer/>
     </div>
   );
 }
