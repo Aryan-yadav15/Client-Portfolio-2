@@ -6,7 +6,7 @@ import ProjectGallery from './_shared/ProjectGallery'
 const projects = [
     {
       id: 1,
-      imageUrl: '/image.png',
+      imageUrl: '/i1.jpg',
       title: 'Magzone Website',
       description: 'A responsive website designed for an online magazine platform...',
       topic: 'WEB DESIGN',
@@ -14,7 +14,7 @@ const projects = [
     },
     {
       id: 2,
-      imageUrl: '/heel.png',
+      imageUrl: '/i2.jpg',
       title: 'E-commerce Shoe Store',
       description: 'An e-commerce platform for footwear with a focus on user experience...',
       topic: 'E-COMMERCE',
@@ -22,7 +22,7 @@ const projects = [
     },
     {
       id: 3,
-      imageUrl: '/image.png',
+      imageUrl: '/i3.jpg',
       title: 'Portfolio Website',
       description: 'Personal portfolio showcasing design and development skills...',
       topic: 'PORTFOLIO',
@@ -30,7 +30,7 @@ const projects = [
     },
     {
       id: 4,
-      imageUrl: '/heel.png',
+      imageUrl: '/i4.jpg',
       title: 'Event Management App',
       description: 'A mobile application for managing and attending events...',
       topic: 'APP DEVELOPMENT',
@@ -38,7 +38,7 @@ const projects = [
     },
     {
       id: 5,
-      imageUrl: '/image.png',
+      imageUrl: '/i5.jpg',
       title: 'Blogging Platform',
       description: 'A content-rich blogging platform that emphasizes seamless user interaction...',
       topic: 'WEB DEVELOPMENT',
@@ -53,7 +53,7 @@ const MyWork = () => {
     <div>
       <div className="flex flex-col gap-4 pt-10">
         <h1 className="text-center text-7xl font-semibold">Selected Work</h1>
-        <p className="text-center text-2xl pr-3">The work I'm proud of</p>
+        <p className="text-center text-2xl pr-3">The work I am proud of</p>
       </div>
 
         <ProjectGallery projects = {projects}/>
