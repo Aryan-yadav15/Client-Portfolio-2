@@ -1,12 +1,20 @@
-"use client"; 
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
 
-const AnimatedButton = ({ href, firstName, secondName, bgColor }) => {
+const AnimatedButton = ({
+  href,
+  firstName,
+  secondName,
+  bgColor = "bg-blue-500",  // Default background color
+  textColor = "text-white", // Default text color
+  borderColor = "", // Default border color
+  borderWidth = "border-2", // Default border width
+}) => {
   return (
     <div
-      className={`border-2 text-white text-2xl rounded-full py-1 px-4 relative h-14 overflow-hidden ${bgColor}`}
+      className={`${borderWidth} ${borderColor} ${textColor} text-2xl rounded-full py-1 px-4 relative h-14 overflow-hidden ${bgColor}`}
     >
       <a href={href} className="h-8 mt-[4px] overflow-hidden block">
         <motion.div

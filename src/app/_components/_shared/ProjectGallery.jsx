@@ -23,8 +23,7 @@ const ProjectGallery = ({ projects }) => {
 
     projectRefs.current.forEach((ref) => {
       if (ref) observer.observe(ref);
-    });
-
+    }); 
     return () => {
       projectRefs.current.forEach((ref) => {
         if (ref) observer.unobserve(ref);
@@ -35,7 +34,7 @@ const ProjectGallery = ({ projects }) => {
   return (
     <div className="flex gap-10 py-10">
       {/* Fixed Image Container */}
-      <div className="w-1/2 h-[30rem] sticky top-20 flex items-center justify-center rounded-[24px] bg-gray-100">
+      <div className="w-1/2 h-[30rem] sticky top-14 flex items-center justify-center rounded-[24px] bg-gray-100 shadow-2xl">
         <div className="relative w-full h-full overflow-hidden">
           {/* Use AnimatePresence for smooth transitions */}
           <AnimatePresence mode="wait">
@@ -69,13 +68,13 @@ const ProjectGallery = ({ projects }) => {
             ref={(el) => (projectRefs.current[index] = el)} // Attach refs to each project
             className="h-[50vh] bg-white rounded-[24px] shadow-xl px-2 py-5 overflow-hidden transition-all duration-300" // Optional hover effect
           >
-            <div className="flex flex-col justify-end gap-20 p-4 bg-white overflow-hidden">
+            <div className="flex flex-col justify-end gap-10 p-4 bg-white overflow-hidden">
               <div className="flex flex-row justify-between font-medium items-center">
                 <p>{project.topic}</p>
                 <p className="text-xl">{project.year}</p>
               </div>
               <motion.div
-                className="flex flex-col gap-5"
+                className="flex flex-col "
                 initial="initial"
                 whileHover="hover"
               >
@@ -90,7 +89,7 @@ const ProjectGallery = ({ projects }) => {
                   <motion.div
                     className="whitespace-nowrap absolute left-0 py-1 "
                     variants={{
-                      initial: { x: "0%", fontSize: "4rem" },
+                      initial: { x: "0%", fontSize: "2.5rem" },
                       hover: {
                         x: "-100%",
                         fontSize: "7rem",
