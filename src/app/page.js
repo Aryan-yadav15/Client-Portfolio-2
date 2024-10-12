@@ -22,8 +22,8 @@ export default function Home() {
     <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-30 xl:px-60 flex flex-col gap-5 pt-5">
       <Header aboutRef={aboutRef} myWorkRef={myWorkRef} myCvRef={myCvRef} expRef={expRef} />
       <Herosection myCvRef={myCvRef}/>
-      <div ref={aboutRef}><About /></div>
       <div ref={myWorkRef}><MyWork /></div>
+      <div ref={aboutRef}><About /></div>
       <div ref={myCvRef}><MyCv /></div>
       <div ref={expRef}><Exp /></div>
       <Footer aboutRef={aboutRef} myWorkRef={myWorkRef} myCvRef={myCvRef} expRef={expRef} />
