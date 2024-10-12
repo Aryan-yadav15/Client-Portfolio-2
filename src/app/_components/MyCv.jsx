@@ -16,7 +16,7 @@ const MyCv = () => {
           <p className="text-center pt-5 text-xl">A Deeper dive in my world</p>
         </section>
         <section className="flex flex-col sm:flex-row gap-4 sm:gap-10">
-          <section className="sm:w-1/3">
+          <section className="lg:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">01.</p>
               <h1 className="font-semibold text-gray-950 text-5xl pb-5">
@@ -24,9 +24,9 @@ const MyCv = () => {
               </h1>
             </div>
           </section>
-          <section className="sm:w-2/3">
-            <div className="flex flex-row justify-between py-6 sm:py-10 border-t hover:border-gray-800 transition border-gray-400">
-              <div className="mb-2 sm:mb-0 w-[80%] hover:text-black transition-all duration-200 ">
+          <section className="lg:w-2/3">
+            <div className="flex flex-col lg:flex-row justify-between py-6 sm:py-10 border-t hover:border-gray-800 transition border-gray-400">
+              <div className="mb-2 sm:mb-0 lg:w-[80%] hover:text-black transition-all duration-200 ">
                 <h1 className="font-medium text-gray-950 text-xl sm:text-2xl">
                   Kyndryl - Senior manager UX Design
                 </h1>
@@ -47,26 +47,26 @@ const MyCv = () => {
                     ))}
                   </div> */}
               </div>
-              <div className="w-[20%] ">
-                <p className="text-sm bg-black text-center rounded-lg text-white">July 2024 - Present</p>
+              <div className="lg:w-[20%]  ">
+                <p className="text-sm bg-black text-center rounded-lg text-white py-2">July 2024 - Present</p>
               </div>
             </div>
           </section>
         </section>
         <section className="flex flex-col sm:flex-row gap-4 sm:gap-10">
-          <section className="sm:w-1/3">
+          <section className="lg:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">02.</p>
               <h1 className="font-semibold text-gray-950 text-5xl ">Education</h1>
             </div>
           </section>
-          <section className="sm:w-2/3">
+          <section className="lg:w-2/3">
             {experience.map((exp, index) => (
               <div
                 key={index}
                 className="flex flex-col  md:flex-row justify-between py-6 sm:py-10 border-t hover:border-gray-800 transition border-gray-400"
               >
-                <div className="mb-2 sm:mb-0 w-[80%] hover:text-black transition-all duration-200 ">
+                <div className="mb-2 sm:mb-0 lg:w-[80%] hover:text-black transition-all duration-200 ">
                   <h1 className="font-medium text-gray-950 text-xl sm:text-2xl">
                     {exp.title}
                   </h1>
@@ -87,7 +87,7 @@ const MyCv = () => {
         </section>
         {/* this is another degment  */}
         <section className="flex flex-col sm:flex-row gap-4 sm:gap-10">
-          <section className="sm:w-1/3">
+          <section className="lg:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">03.</p>
               <h1 className="font-semibold text-gray-950 text-5xl ">
@@ -95,13 +95,13 @@ const MyCv = () => {
               </h1>
             </div>
           </section>
-          <section className="sm:w-2/3">
+          <section className="lg:w-2/3">
             {professionalExperience.map((exp, index) => (
               <div
                 key={index}
                 className="flex flex-col  md:flex-row justify-between py-6 sm:py-10 border-t hover:border-gray-800 transition border-gray-400"
               >
-                <div className="mb-2 sm:mb-0 w-[80%] hover:text-black transition-all duration-200 ">
+                <div className="mb-2 sm:mb-0 lg:w-[80%] hover:text-black transition-all duration-200 ">
                   <h1 className="font-medium text-gray-950 text-xl sm:text-2xl">
                     {exp.title}
                   </h1>
@@ -121,7 +121,7 @@ const MyCv = () => {
           </section>
         </section>
         <section className="flex flex-col sm:flex-row gap-4 sm:gap-10 mt-6 sm:mt-10">
-          <section className="sm:w-1/3">
+          <section className="leading-3:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">04.</p>
               <h1 className="font-semibold text-gray-950  text-5xl">
@@ -129,7 +129,7 @@ const MyCv = () => {
               </h1>
             </div>
           </section>
-          <section className="sm:w-2/3">
+          <section className="lg:w-2/3">
             {achievements.map((achievement, index) => (
               <div
                 key={index}
