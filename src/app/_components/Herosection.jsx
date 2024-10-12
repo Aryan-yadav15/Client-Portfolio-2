@@ -33,7 +33,7 @@ const Herosection = ({ myCvRef }) => {
 
         {/* Responsive subheading */}
         <h2 className="text-center text-lg sm:text-xl lg:text-2xl font-light text-gray-700 px-5 sm:px-20 lg:px-72 pt-6 sm:pt-8 lg:pt-10">
-          I create digital products that focus on the users' needs and fit the
+          I create digital products that focus on the users needs and fit the
           product strategy.
         </h2>
       </div>

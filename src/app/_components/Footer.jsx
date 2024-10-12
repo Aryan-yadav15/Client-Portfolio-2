@@ -13,7 +13,7 @@ const Footer = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
         Ready to Collaborate
       </h1>
       <p className="p-4 text-lg md:text-xl text-white">
-        Let's drop your idea here
+        Lets drop your idea here
       </p>
       <div className="w-[90%] max-w-[20rem] h-14 bg-white rounded-xl flex items-center pl-4">
         <input

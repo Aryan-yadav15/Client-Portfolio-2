@@ -66,7 +66,7 @@ const About = () => {
           <div className="w-full md:w-2/3 bg-gray-800 rounded-[24px] p-10">
             <p className="text-gray-200 font-regular">
               At the core of my design philosophy is empathy. I believe in
-              deeply understanding users' behaviors, motivations, and pain
+              deeply understanding users behaviors, motivations, and pain
               points to create intuitive and meaningful experiences. My approach
               is iterative, collaborative, and driven by data, ensuring that
               every design decision is grounded in user insights. I am
