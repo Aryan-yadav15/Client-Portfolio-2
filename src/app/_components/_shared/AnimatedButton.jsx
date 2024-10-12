@@ -14,17 +14,17 @@ const AnimatedButton = ({
 }) => {
   return (
     <div
-      className={`${borderWidth} ${borderColor} ${textColor} text-2xl rounded-full py-1 px-4 relative h-14 overflow-hidden ${bgColor}`}
+      className={`${borderWidth} ${borderColor} ${textColor} text-lg sm:text-xl lg:text-2xl rounded-full py-1 px-4 sm:px-6 lg:px-8 relative h-12 overflow-hidden ${bgColor}`}
     >
-      <a href={href} className="h-8 mt-[4px] overflow-hidden block">
+      <a href={href} className="overflow-hidden block">
         <motion.div
           className="cursor-pointer flex flex-col justify-center items-center"
           initial={{ y: 0 }}
-          whileHover={{ y: -38 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }} // Added spring effect
+          whileHover={{ y: -38 }} // Keep this consistent with the button's height
+          transition={{ type: "spring", stiffness: 300, damping: 20 }} // Spring effect for smooth transitions
         >
           <p className="w-full text-center">{firstName}</p>
-          <p className="w-full text-center pt-2">{secondName}</p>
+          <p className="w-full text-center pt-1 sm:pt-2">{secondName}</p>
         </motion.div>
       </a>
     </div>

@@ -38,7 +38,7 @@ const projects = [
     },
     {
       id: 5,
-      imageUrl: '/i5.jpg',
+      imageUrl: '/i1.jpg',
       title: 'Blogging Platform',
       description: 'A content-rich blogging platform that emphasizes seamless user interaction...',
       topic: 'WEB DEVELOPMENT',
