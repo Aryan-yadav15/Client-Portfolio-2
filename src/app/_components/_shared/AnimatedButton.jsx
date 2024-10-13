@@ -36,7 +36,7 @@ const AnimatedButton = ({
         <Link href={href}>
           <div className="overflow-hidden block">
             <motion.div
-              className="cursor-pointer flex flex-col justify-center items-center"
+              className="cursor-pointer mt-1 lg:mt-0 flex flex-col justify-center items-center"
               initial={{ y: 0 }}
               whileHover={{ y: -38 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}

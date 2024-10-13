@@ -48,7 +48,7 @@ const About = () => {
               over 10 years, driving functional priorities and leading key
               design projects.
             </p>
-            <div className="w-1/2 pt-8">
+            <div className="lg:w-1/2 pt-8">
               <div onClick={handleDownload}>
                 <AnimatedButton {...buttonProps} />
               </div>
