@@ -55,7 +55,7 @@ const Header = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
         <AnimatePresence>
           {isCross && (
             <motion.div
-              className="absolute top-20 left-0 bg-gray-900 text-white w-[12rem] h-[20rem] p-4 rounded-md shadow-lg"
+              className="absolute top-20 left-0 bg-gray-900 text-white w-[12rem] h-[15rem] p-4 rounded-md shadow-lg"
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
@@ -101,7 +101,7 @@ const Header = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
       </div>
 
       {/* Center with name */}
-      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-thin ml-20 text-center flex-1">
+      <div className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-thin lg:ml-20 text-center flex-1">
         PuneetVerma
       </div>
 

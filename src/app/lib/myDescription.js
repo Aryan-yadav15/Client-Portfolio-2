@@ -5,7 +5,7 @@ export const experience = [
     year: "2024-Present",
     tech: ["React", "Next.js", "Framer", "Hosting", "Express"],
     description:
-      "Currently pursuing a Diploma in Computer Engineering, focusing on full-stack web development using modern technologies like React and Next.js. Gaining experience in designing and deploying web applications, and working on a variety of projects that involve collaboration, problem-solving, and leadership in development environments.",
+      "Completed Diploma in Computer Engineering, focusing on full-stack web development using modern technologies like React and Next.js. Gaining experience in designing and deploying web applications, and working on a variety of projects that involve collaboration, problem-solving, and leadership in development environments.",
   },
   {
     title: "Diploma - Web Designing & Development",

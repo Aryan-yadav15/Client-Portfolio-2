@@ -19,7 +19,7 @@ const MyCv = () => {
           <section className="lg:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">01.</p>
-              <h1 className="font-semibold text-gray-950 text-5xl pb-5">
+              <h1 className="font-semibold text-gray-950 text-4xl lg:text-5xl pb-5">
                 Currently Working
               </h1>
             </div>
@@ -57,7 +57,7 @@ const MyCv = () => {
           <section className="lg:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">02.</p>
-              <h1 className="font-semibold text-gray-950 text-5xl ">Education</h1>
+              <h1 className="font-semibold text-gray-950 text-4xl lg:text-5xl ">Education</h1>
             </div>
           </section>
           <section className="lg:w-2/3">
@@ -90,7 +90,7 @@ const MyCv = () => {
           <section className="lg:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">03.</p>
-              <h1 className="font-semibold text-gray-950 text-5xl ">
+              <h1 className="font-semibold text-gray-950 text-4xl lg:text-5xl ">
                 Experience
               </h1>
             </div>
@@ -124,7 +124,7 @@ const MyCv = () => {
           <section className="leading-3:w-1/3">
             <div className="sticky top-5 border-t border-gray-400 pt-5">
               <p className="text-sm text-gray-600">04.</p>
-              <h1 className="font-semibold text-gray-950  text-5xl">
+              <h1 className="font-semibold text-gray-950  text-4xl lg:text-5xl">
                 Achievements
               </h1>
             </div>

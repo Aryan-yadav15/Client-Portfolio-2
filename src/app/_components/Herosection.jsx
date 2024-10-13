@@ -40,9 +40,9 @@ const Herosection = ({ myCvRef }) => {
 
       {/* Button responsive width */}
       <div className="w-48 sm:w-60 lg:w-72 pt-5">
-        <a onClick={() => scrollToSection(myCvRef)}>
+        <div onClick={() => scrollToSection(myCvRef)}>
           <AnimatedButton {...buttonProps} />
-        </a>
+        </div>
       </div>
     </div>
   );

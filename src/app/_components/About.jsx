@@ -13,6 +13,14 @@ const About = () => {
     textColor: "text-gray-600",
   };
 
+  const handleDownload = () => {
+    // Trigger the download of the PDF
+    const link = document.createElement("a");
+    link.href = "/resume.pdf"; // Adjust the path to your actual resume file
+    link.download = "resume.pdf"; // The filename for the downloaded file
+    link.click();
+  };
+
   return (
     <div className="flex flex-col px-4 lg:px-10 gap-5">
       <div className="text-center pt-10 pb-4 flex flex-col gap-4">
@@ -40,11 +48,11 @@ const About = () => {
               over 10 years, driving functional priorities and leading key
               design projects.
             </p>
-            <a href="/resume.pdf" download>
-              <div className="w-1/2 pt-8">
+            <div className="w-1/2 pt-8">
+              <div onClick={handleDownload}>
                 <AnimatedButton {...buttonProps} />
               </div>
-            </a>
+            </div>
           </div>
           <div className="w-full md:w-2/5 relative h-[30rem] drop-shadow-2xl">
             <Image
@@ -66,14 +74,14 @@ const About = () => {
           <div className="w-full md:w-2/3 bg-gray-800 rounded-[24px] p-10">
             <p className="text-gray-200 font-regular">
               At the core of my design philosophy is empathy. I believe in
-              deeply understanding users behaviors, motivations, and pain
-              points to create intuitive and meaningful experiences. My approach
-              is iterative, collaborative, and driven by data, ensuring that
-              every design decision is grounded in user insights. I am
-              proficient in Adobe Creative Suite, including Photoshop,
-              Illustrator, and InDesign. I am also skilled in HTML, CSS, and
-              JavaScript. Additionally, I have experience with content
-              management systems like SharePoint and Adobe Enterprise Manager.
+              deeply understanding users behaviors, motivations, and pain points
+              to create intuitive and meaningful experiences. My approach is
+              iterative, collaborative, and driven by data, ensuring that every
+              design decision is grounded in user insights. I am proficient in
+              Adobe Creative Suite, including Photoshop, Illustrator, and
+              InDesign. I am also skilled in HTML, CSS, and JavaScript.
+              Additionally, I have experience with content management systems
+              like SharePoint and Adobe Enterprise Manager.
             </p>
           </div>
         </div>

@@ -1,49 +1,51 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-const LinkBox = ({ imageUrl, text }) => {
+const LinkBox = ({ imageUrl, text, href, isExternal }) => {
   return (
     <motion.div
-      className="flex-1 bg-white rounded-2xl h-16 flex flex-row justify-center overflow-hidden items-center  gap-6" // Added gap-6 for spacing
-      whileHover="hover" // Hover state trigger
+      className="flex-1 bg-white rounded-2xl h-16 flex flex-row justify-center overflow-hidden items-center gap-6"
+      whileHover="hover"
       transition={{ duration: 0.3 }}
     >
-      {/* Motion div for the images */}
-      <Link href="/">
+      {/* Use <a> instead of <Link> for external links */}
+      <a
+        href={href}
+        target={isExternal ? "_blank" : "_self"} // Open in new tab if it's an external link
+        rel={isExternal ? "noopener noreferrer" : ""}
+      >
         <div className="mt-16 flex flex-row justify-center items-center gap-6 overflow-hidden">
           <motion.div
             className="flex flex-col items-center space-y-6"
-            initial={{ y: -4 }} // Initial state with no movement
+            initial={{ y: -8 }}
             variants={{
-              hover: { y: -60 }, // Move images up on hover
+              hover: { y: -56 },
             }}
           >
             <Image src={imageUrl} alt="Image1" width={30} height={30} />
             <Image
               src="/arrow.svg"
-              alt="Image2"
+              alt="Arrow Icon"
               width={30}
               height={30}
-              className="text-black "
+              className="text-black"
             />
           </motion.div>
 
-          {/* Motion div for the text */}
           <motion.div
             className="text-center text-2xl flex flex-col space-y-12 pb-1"
-            initial={{ y: -70 }} // Initial state with no movement
+            initial={{ y: -70 }}
             variants={{
-              hover: { y: 10 }, // Move text down on hover
+              hover: { y: 10 },
             }}
           >
             <p>Visit Link</p>
             <p>{text}</p>
           </motion.div>
         </div>
-      </Link>
+      </a>
     </motion.div>
   );
 };

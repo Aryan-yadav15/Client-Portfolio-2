@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import LinkBox from "./_shared/LinkBox";
 
 const Footer = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
   const scrollToSection = (ref) => {
@@ -15,19 +16,12 @@ const Footer = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
       <p className="p-4 text-lg md:text-xl text-white">
         Lets drop your idea here
       </p>
-      <div className="w-[90%] max-w-[20rem] h-14 bg-white rounded-xl flex items-center pl-4">
-        <input
-          type="email"
-          placeholder="Let's Talk -@gmail.com"
-          className="w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          required
+      <div className="w-[90%] max-w-[20rem] mr-6 rounded-xl flex items-center pl-4">
+        <LinkBox
+          imageUrl="/google-gmail.svg"
+          text="Gmail"
+          href="mailto:youremail@example.com?subject=Contact&body=Hello!" // Customize the email address, subject, and body
         />
-        <button
-          className="ml-2 h-full px-4 bg-gray-700 text-white rounded-md hover:bg-black transition duration-200"
-          type="button"
-        >
-          <Image width={25} height={25} src="/google-gmail.svg" alt="mail" />
-        </button>
       </div>
       <div className="flex flex-col text-center lg:flex-row pt-10 text-white gap-10 text-lg md:text-xl">
         <a onClick={() => scrollToSection(aboutRef)}>
