@@ -2,15 +2,15 @@ export const experience = [
   {
     title: "Diploma - Computer Engineering",
     company: "Father Agnel Polytechnic, New Delhi",
-    year: "2024-Present",
-    tech: ["React", "Next.js", "Framer", "Hosting", "Express"],
+    year: "3 Years",
+    tech: [],
     description:
       "Completed Diploma in Computer Engineering, focusing on full-stack web development using modern technologies like React and Next.js. Gaining experience in designing and deploying web applications, and working on a variety of projects that involve collaboration, problem-solving, and leadership in development environments.",
   },
   {
     title: "Diploma - Web Designing & Development",
-    company: "BitsToBugs",
-    year: "2022-2023",
+    company: "6 Months",
+    year: "",
     tech: ["Webflow", "Figma", "Design"],
     description:
       "Completed a diploma focused on web design and development, where I created visually engaging websites using Webflow and Figma. Developed interactive web applications and user-friendly interfaces, contributing to projects like embeddable web widgets and optimized user experiences for playback and in-browser interactions.",
@@ -18,7 +18,7 @@ export const experience = [
   {
     title: "Diploma - Computer Course",
     company: "GNIIT",
-    year: "2022-Present",
+    year: "4 Years",
     tech: ["Leadership", "Collaboration"],
     description:
       "Leading the Graphic Design Department in a tech-focused society. Responsible for managing design projects that include web interfaces and promotional materials. Collaborate with teams to ensure high-quality designs that align with project goals. Foster creativity and a culture of continuous improvement within the team, supporting innovative design approaches.",

@@ -1,6 +1,6 @@
 
 
-export const clients = [...new Array(7)].map((client,index)=>({
+export const clients = [...new Array(11)].map((client,index)=>({
   href:`/input${index+1}.svg`
 }))
 export const products = [

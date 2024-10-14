@@ -18,9 +18,9 @@ const Footer = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
       </p>
       <div className="w-[90%] max-w-[20rem] mr-6 rounded-xl flex items-center pl-4">
         <LinkBox
-          imageUrl="/google-gmail.svg"
-          text="Gmail"
-          href="mailto:youremail@example.com?subject=Contact&body=Hello!" // Customize the email address, subject, and body
+          imageUrl="/yahoo.png"
+          text="Mail me"
+          href="mailto:puneetverma1@yahoo.com?subject=Contact&body=Hello!" // Customize the email address, subject, and body
         />
       </div>
       <div className="flex flex-col text-center lg:flex-row pt-10 text-white gap-10 text-lg md:text-xl">

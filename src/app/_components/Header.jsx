@@ -33,7 +33,7 @@ const Header = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
           onClick={handleClick}
         >
           <motion.p
-            className="text-2xl sm:text-3xl mb-[-20px] sm:mb-[-25px] font-sans ml-2"
+            className="text-2xl sm:text-3xl mb-[-20px] sm:mb-[-25px] font-sans leading-tight lg:ml-2"
             initial={{ rotate: 90 }} 
             animate={{ rotate: isCross ? 45 : 90 }} 
             transition={{ duration: 0.3 }} 
@@ -41,7 +41,7 @@ const Header = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
             |
           </motion.p>
           <motion.p
-            className="text-2xl sm:text-3xl mt-[-20px] sm:mt-[-25px] font-sans ml-2"
+            className="text-2xl sm:text-3xl mt-[-20px] sm:mt-[-25px] font-sans leading-tight lg:ml-2"
             initial={{ rotate: 90 }} 
             animate={{ rotate: isCross ? 135 : 90 }} 
             transition={{ duration: 0.3 }} 

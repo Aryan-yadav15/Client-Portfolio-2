@@ -48,11 +48,11 @@ const About = () => {
               over 10 years, driving functional priorities and leading key
               design projects.
             </p>
-            <div className="lg:w-1/2 pt-8">
+            {/* <div className="lg:w-1/2 pt-8">
               <div onClick={handleDownload}>
                 <AnimatedButton {...buttonProps} />
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="w-full md:w-2/5 relative h-[30rem] drop-shadow-2xl">
             <Image
