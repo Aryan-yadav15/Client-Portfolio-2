@@ -3,7 +3,7 @@ export const workExperiences = [
     company: "Ernst and Young LLP, Gurgaon",
     logo: "/ey.jpg", // Update logo paths as necessary
     role: "Senior Manager UI/UX and Content Delivery India Leader",
-    duration: "January 2013 to Present",
+    duration: "January 2013 - Present",
     tasks: [
       {
         title: "Leadership & Coordination",
@@ -38,7 +38,7 @@ export const workExperiences = [
     company: "Fidelity, Bangalore",
     logo: "/fide.png",
     role: "Team Leader - Graphic Design / Web Developer",
-    duration: "September 2006 to January 2013",
+    duration: "September 2006 - January 2013",
     tasks: [
       {
         title: "Leadership and Coordination",
@@ -60,7 +60,7 @@ export const workExperiences = [
     company: "Deloitte, Hyderabad",
     logo: "/del.jpg",
     role: "Analyst (Presentation Designer)",
-    duration: "October 2005 to September 2006",
+    duration: "October 2005 - September 2006",
     tasks: [
       {
         title: "Implementations",
@@ -75,7 +75,7 @@ export const workExperiences = [
     company: "A.T Kearney Pvt. Ltd., Gurgaon",
     logo: "/AT_kern.png", // Update logo paths as necessary
     role: "Graphic Designer",
-    duration: "March 2005 to September 2005",
+    duration: "March 2005 - September 2005",
     tasks: [
       {
         title: "Implementations",
@@ -94,7 +94,7 @@ export const workExperiences = [
     company: "ICI India Ltd., Gurgaon",
     logo: "/ici.jpg",
     role: "Graphic Designer - All-India Previews Co-ordinator",
-    duration: "January 2002 to February 2005",
+    duration: "January 2002 - February 2005",
     tasks: [
       {
         title: "Implementations",

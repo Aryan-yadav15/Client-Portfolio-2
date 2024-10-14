@@ -72,14 +72,6 @@ const Header = ({ aboutRef, myWorkRef, myCvRef, expRef }) => {
                 </li>
                 <li>
                   <a
-                    onClick={() => scrollToSection(myWorkRef)}
-                    className="hover:underline cursor-pointer"
-                  >
-                    Work
-                  </a>
-                </li>
-                <li>
-                  <a
                     onClick={() => scrollToSection(myCvRef)}
                     className="hover:underline cursor-pointer"
                   >

@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 
 import { useRef } from "react";
 import Image from "next/image";
@@ -11,6 +10,7 @@ import Footer from "./_components/Footer";
 import About from "./_components/About";
 import MyCv from "./_components/MyCv";
 import Exp from "./_components/Exp";
+import { TimelineWrapper } from "./_components/Work";
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -20,14 +20,36 @@ export default function Home() {
 
   return (
     <div className="min-h-screen px-4 sm:px-8 md:px-16 lg:px-30 xl:px-60 flex flex-col gap-5 pt-5">
-      <Header aboutRef={aboutRef} myWorkRef={myWorkRef} myCvRef={myCvRef} expRef={expRef} />
-      <Herosection myCvRef={myCvRef}/>
+      <Header
+        aboutRef={aboutRef}
+        myWorkRef={myWorkRef}
+        myCvRef={myCvRef}
+        expRef={expRef}
+      />
+      <Herosection myCvRef={myCvRef} />
       <Links />
-      <div ref={myWorkRef}><MyWork /></div>
-      <div ref={aboutRef}><About /></div>
-      <div ref={myCvRef}><MyCv /></div>
-      <div ref={expRef}><Exp /></div>
-      <Footer aboutRef={aboutRef} myWorkRef={myWorkRef} myCvRef={myCvRef} expRef={expRef} />
+      {/* <div ref={myWorkRef}>
+        <MyWork />
+      </div> */}
+      <div ref={aboutRef}>
+        <About />
+      </div>
+      <div ref={myCvRef}>
+        <MyCv />
+      </div>
+      {/* <div ref={expRef}>
+        <Exp />
+      </div> */}
+      <div ref={expRef}>
+        <TimelineWrapper />
+      </div>
+
+      <Footer
+        aboutRef={aboutRef}
+        myWorkRef={myWorkRef}
+        myCvRef={myCvRef}
+        expRef={expRef}
+      />
     </div>
   );
 }
